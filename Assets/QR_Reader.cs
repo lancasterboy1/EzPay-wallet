@@ -37,7 +37,7 @@ public class QR_Reader : MonoBehaviour
             Debug.Log(result.Text);
             if (result != null)
             {
-                string [] pro_results = result.Text.Split(new string [] {"////!!!!////"}, StringSplitOptions.None);
+                string [] pro_results = result.Text.Split(new string [] {"/!/"}, StringSplitOptions.None);
                 texteroo.text = "would you like to send " + pro_results[0] + "to " + pro_results[1] + " at the address " + pro_results[2];
 
             }
